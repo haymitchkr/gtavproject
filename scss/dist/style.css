@@ -1,0 +1,217 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.register {
+  background: url(/img/background.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register__buttons {
+  margin-top: 45px;
+}
+@media (max-height: 800px) {
+  .register__buttons {
+    margin-top: 25px;
+  }
+}
+
+.container {
+  width: 480px;
+  background: linear-gradient(
+    180deg,
+    rgba(5, 7, 6, 0.55) 0%,
+    rgba(33, 33, 33, 0.55) 100%
+  );
+  backdrop-filter: blur(45px);
+  border-radius: 5px;
+}
+.container__inner {
+  width: 70%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+@media (max-height: 800px) {
+  .container__inner {
+    padding: 30px 0;
+  }
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.name__box {
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 6px;
+  margin-bottom: 40px;
+}
+@media (max-height: 800px) {
+  .name__box {
+    margin-bottom: 20px;
+  }
+}
+.name__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+.name__text-description {
+  line-height: 0;
+}
+.name__link {
+  color: rgba(255, 255, 255, 0.22);
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1px;
+}
+.name__link:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.form {
+  text-align: left;
+  padding-top: 30px;
+}
+@media (max-height: 800px) {
+  .form {
+    padding-top: 20px;
+  }
+}
+.form__item {
+  margin-bottom: 13px;
+}
+@media (max-height: 800px) {
+  .form__item {
+    margin-bottom: 10px;
+  }
+}
+.form__item:last-child {
+  margin-bottom: 0;
+}
+.form__name {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 11px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.form__wrapper {
+  display: flex;
+}
+.form__icon {
+  width: 47px;
+  height: 47px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 3px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__input {
+  flex: 1 0;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  padding: 14px 20px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  font-family: "Roboto", sans-serif;
+}
+.form__input:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.form .form__icon--active {
+  background: linear-gradient(90deg, #fd980a 0%, #fe9b22 100%);
+  box-shadow: 0px 0px 2px #ff9708;
+}
+.form .form__input--active {
+  box-shadow: inset 0px 0px 0px 1.5px #fe9b21;
+  background: rgba(255, 255, 255, 0.07);
+}
+.form .form__input--active:hover {
+  background: rgba(255, 255, 255, 0);
+}
+
+.buttons__submit {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 9px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 13px 30px;
+  color: #fff;
+  background: #343434;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+  position: relative;
+}
+.buttons__submit:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 10px;
+  top: 50%;
+  right: 13px;
+  transform: translateY(-45%);
+  background-image: url(/img/arrow.svg);
+}
+.buttons__submit:hover {
+  background: linear-gradient(90deg, #fd980b 0%, #fe9b21 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(0px 0px 8px rgba(255, 156, 39, 0.25));
+}
+.buttons__submit--active {
+  background: linear-gradient(90deg, #fd980b 0%, #fe9b21 100%);
+}
+.buttons__back {
+  margin: 0 auto;
+  display: block;
+  padding: 0;
+  padding-bottom: 2px;
+  margin-top: 20px;
+  text-decoration: none;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.buttons__back:hover {
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}

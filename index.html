@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Entry</title>
+  </head>
+
+  <body>
+    <!-- ------Register BEGIN------ -->
+    <main class="register">
+      <div class="page">
+        <div class="container page__container">
+          <div class="container__inner">
+            <div class="name page__name">
+              <div class="name__logo">
+                <img class="name__logo-img" src="img/logo.png" alt="logotype" />
+              </div>
+              <div class="name__box">
+                <div class="name__title">Регистрация</div>
+                <div class="name__description">
+                  Есть аккаунт? Вернитесь назад.
+                </div>
+              </div>
+            </div>
+            <div class="form page__form">
+              <div class="form__item">
+                <div class="form__name">Введите Ваш логин</div>
+                <div class="form__wrapper">
+                  <div class="form__icon">
+                    <img
+                      src="img/userIcon.svg"
+                      alt="user Icon"
+                      class="form__icon-img"
+                    />
+                  </div>
+                  <input type="text" class="form__input" />
+                </div>
+              </div>
+              <div class="form__item">
+                <div class="form__name">Введите Ваш EMAIL</div>
+                <div class="form__wrapper">
+                  <div class="form__icon">
+                    <img
+                      src="img/mail_Icon.svg"
+                      alt="mail Icon"
+                      class="form__icon-img"
+                    />
+                  </div>
+                  <input type="email" class="form__input" />
+                </div>
+              </div>
+              <div class="form__item">
+                <div class="form__name">Придумайте пароль</div>
+                <div class="form__wrapper">
+                  <div class="form__icon">
+                    <img
+                      src="img/pass_Icon.svg"
+                      alt="pass Icon"
+                      class="form__icon-img"
+                    />
+                  </div>
+                  <input type="password" class="form__input" />
+                </div>
+              </div>
+              <div class="form__item">
+                <div class="form__name">Повторите пароль</div>
+                <div class="form__wrapper">
+                  <div class="form__icon">
+                    <img
+                      src="img/pass_Icon.svg"
+                      alt="pass Icon"
+                      class="form__icon-img"
+                    />
+                  </div>
+                  <input type="password" class="form__input" />
+                </div>
+              </div>
+              <div class="form__item">
+                <div class="form__name">Промокод</div>
+                <div class="form__wrapper">
+                  <div class="form__icon">
+                    <img
+                      src="img/gift_Icon.svg"
+                      alt="gift Icon"
+                      class="form__icon-img"
+                    />
+                  </div>
+                  <input type="text" class="form__input" />
+                </div>
+              </div>
+            </div>
+            <div class="buttons page__buttons">
+              <div class="buttons__wrapper-submit">
+                <button
+                  class="submit-button submit-button--active buttons__submit"
+                >
+                  Зарегистрироваться
+                </button>
+              </div>
+              <!-- Ведет на Login -->
+              <button class="buttons__back-login sub-button">
+                Вернутся назад
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ------Login BEGIN------ -->
+    <main class="login login--show">
+      <div class="page">
+        <div class="container page__container">
+          <div class="container__inner">
+            <div class="name page__name">
+              <div class="name__logo">
+                <img class="name__logo-img" src="img/logo.png" alt="logotype" />
+              </div>
+              <div class="name__box">
+                <div class="name__title">Авторизация</div>
+                <div class="name__description">
+                  С возвращением, дорогой игрок
+                </div>
+              </div>
+            </div>
+            <div class="form page__form">
+              <div class="form__item">
+                <div class="form__name">Введите Ваш логин</div>
+                <div class="form__wrapper">
+                  <div class="form__icon form__icon--active--always">
+                    <img
+                      src="img/userIcon.svg"
+                      alt="user Icon"
+                      class="form__icon-img"
+                    />
+                  </div>
+                  <input type="text" class="form__input" />
+                </div>
+              </div>
+              <div class="form__item">
+                <div class="form__name">Введите пароль</div>
+                <div class="form__wrapper">
+                  <div class="form__icon">
+                    <img
+                      src="img/pass_Icon.svg"
+                      alt="pass Icon"
+                      class="form__icon-img"
+                    />
+                  </div>
+                  <input type="password" class="form__input" />
+                </div>
+              </div>
+            </div>
+            <div class="buttons page__buttons">
+              <div class="buttons__wrapper-submit">
+                <button
+                  class="submit-button submit-button--active buttons__submit"
+                >
+                  Авторизоваться
+                </button>
+                <!-- Ведет на register -->
+                <button
+                  class="submit-button buttons__submit submit-button--register"
+                >
+                  Зарегистрироваться
+                </button>
+              </div>
+              <!-- Ведет на recovery -->
+              <button class="buttons__recovery sub-button">Забыл пароль</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ------Recovery BEGIN------ -->
+    <main class="recovery">
+      <div class="page">
+        <div class="container page__container">
+          <div class="container__inner">
+            <div class="name page__name">
+              <div class="name__logo">
+                <img class="name__logo-img" src="img/logo.png" alt="logotype" />
+              </div>
+              <div class="name__box">
+                <div class="name__title">Восстановление</div>
+                <div class="name__description">
+                  Если Вы забыли пароль, восстановите
+                </div>
+              </div>
+            </div>
+            <div class="form page__form">
+              <div class="form__item">
+                <div class="form__name">Введите Ваш логин</div>
+                <div class="form__wrapper">
+                  <div class="form__icon form__icon--active--always">
+                    <img
+                      src="img/userIcon.svg"
+                      alt="user Icon"
+                      class="form__icon-img"
+                    />
+                  </div>
+                  <input type="text" class="form__input" />
+                </div>
+              </div>
+            </div>
+            <div class="buttons page__buttons">
+              <div class="buttons__wrapper-submit">
+                <button
+                  class="submit-button submit-button--active buttons__submit"
+                >
+                  Восстановить
+                </button>
+              </div>
+              <!-- Ведет на Login -->
+              <button class="buttons__back-login sub-button">Назад</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
